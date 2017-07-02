@@ -28,6 +28,69 @@
 
 ------
 
+## Entwickler Plattformen
+
+<!-- .slide: data-transition="slide-in none" -->
+
+<div class="image-row">
+    <p>&nbsp;&nbsp;&nbsp;</p>
+    <p>native<br/>Engines</p>
+    <div><img style="padding-left: 15px" data-src="media/img/Unity.png" todo="Unity"></div>
+    <div><img style="padding-left: 30px" height="200px" data-src="media/img/Unreal.png" todo="Unreal"></div>
+    <div><img data-src="media/img/CryEngine.png" todo="CryEngine"></div>
+</div>
+
+<div class="image-row" style="height: 222.815px">
+
+</div>
+
+<div class="image-row" style="height: 10px; margin-top: -50px">
+
+</div>
+
+<!-- NOTES -->
+
+---
+
+## Entwickler Plattformen
+
+<!-- .slide: data-transition="none slide-out" -->
+
+<div class="image-row">
+    <p>&nbsp;&nbsp;&nbsp;</p>
+    <p>native<br/>Engines</p>
+        <div><img style="padding-left: 15px" data-src="media/img/Unity.png" todo="Unity"></div>
+        <div><img style="padding-left: 30px" height="200px" data-src="media/img/Unreal.png" todo="Unreal"></div>
+        <div><img data-src="media/img/CryEngine.png" todo="CryEngine"></div>
+</div>
+
+<div class="image-row"  style="height: 222.815px">
+    <p>&nbsp;&nbsp;&nbsp;</p>
+    <p>WebVR</p>
+    <div>
+        <h2 style="margin-left: 280px">**das Web**</h2>
+    </div>
+</div>
+
+<div class="image-row" style="height: 10px; margin-top: -50px">
+    <p style="margin-left: 300px">HTML</p>
+    <p style="margin-left: 70px">JavaScript</p>
+    <p style="margin-left: 70px">WebGL</p>
+</div>
+
+<!-- NOTES -->
+
+---
+
+## Gewählte Plattformen/Frameworks <br> zum Vergleich
+
+<div class="image-row">
+    <div><img data-src="media/img/Unity.png"></div>
+    <div><img data-src="media/img/aframe-logo.png"></div>
+</div>
+
+------
+
 # Bewertung
 
 <!-- NOTES -->
@@ -102,47 +165,293 @@
 
 ---
 
-## Entwickler Plattformen
+https://webvr.rocks
 
-<!-- .slide: data-transition="slide-in none" -->
-
-<div class="image-row">
-    <p>&nbsp;&nbsp;&nbsp;</p>
-    <p>native<br/>Engines</p>
-    <div><img style="padding-left: 15px" data-src="media/img/Unity.png" todo="Unity"></div>
-    <div><img style="padding-left: 30px" height="200px" data-src="media/img/Unreal.png" todo="Unreal"></div>
-    <div><img data-src="media/img/CryEngine.png" todo="CryEngine"></div>
+<div class="captioned-image-row small">
+  <div>
+    <img data-src="media/img/firefox-nightly.png">
+    <i>Firefox Nightly</i>
+  </div>
+  <div>
+    <img data-src="media/img/edge.jpg">
+    <i>Microsoft Edge</i>
+  </div>
+  <div>
+    <img data-src="media/img/chromium.png">
+    <i>Chromium</i>
+  </div>
 </div>
 
-<div class="image-row" style="height: 222.815px">
+<div class="captioned-image-row small">
+  <div>
+    <img data-src="media/img/chrome.png">
+    <i>Chrome for Android</i>
+  </div>
+  <div>
+    <img data-src="media/img/carmel.jpg">
+    <i>Oculus Carmel</i>
+  </div>
+  <div>
+    <img data-src="media/img/samsung-browser.png">
+    <i>Samsung Internet</i>
+  </div>
+  <div>
+    <img data-src="media/img/google-cardboard.png">
+    <i>Mobile Polyfill</i>
+  </div>
+</div>
 
+<!-- NOTES -->
+- Firefox + Chrome WebVR 1.0 hits release channels by early 2017
+- Currently behind Nightly, custom builds, and flags
+- Mobile Polyfill: use device motion / orientation sensors to polyfill on smartphones
+- With all the browsers behind it...
+
+---
+
+# Grafik-API
+
+<table>
+  <tr>
+    <th>A-Frame</th>
+    <th>Unity</th>
+  </tr>
+  <tr>
+    <td>WebGL 1.0 (~OpenGLES 2.0)</td>
+    <td>DirectX 9-12</td>
+  </tr>
+  <tr>
+    <td>[WebGL 2.0 (~OpenGLES 3)]</td>
+    <td>OpenGLCore</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>OpenGLES 2-3</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Metal</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>Vulkan<br></td>
+  </tr>
+</table>
+
+---
+
+# Multimedia
+
+<table>
+  <tr>
+    <th></th>
+    <th>A-Frame</th>
+    <th>Unity</th>
+  </tr>
+  <tr>
+    <td rowspan="2">3D</td>
+    <td>COLLADA, OBJ, JSON, Blend, glTF</td>
+    <td>FBX, COLLADA, OBJ, </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>MAX, C4D, Maya, ...</td>
+  </tr>
+  <tr>
+    <td>Bilder</td>
+    <td>JPG, PNG, BMP, GIF, SVG</td>
+    <td>JPG, PNG, BMP, TGA, TIF, PSD</td>
+  </tr>
+  <tr>
+    <td>Videos</td>
+    <td>Browserabhängig</td>
+    <td>alle von Browsern unterstützen Formate</td>
+  </tr>
+</table>
+
+---
+
+# Lizensierung
+<style type="text/css">
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+    margin:0px auto;
+}
+</style>
+
+<table>
+  <tr>
+    <th>&nbsp;</th>
+    <th>A-Frame</th>
+    <th>Unity</th>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>Open Source (MIT)</td>
+    <td>Closed Source</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td></td>
+    <td>Lizenz abhängig von Umsatz und Unternehmensgröße</td>
+  </tr>
+</table>
+
+---
+
+# Performance
+
+<img height="500px" src="media/img/FCAT.png">
+
+------
+
+# Allgemeine Kriterien
+
+---
+
+# Dokumentation
+
+<div class="captioned-image-row">
+  <div>
+    <img data-src="media/img/aframe-doc.png">
+    <i>A-Frame</i>
+  </div>
+  <div>
+    <img data-src="media/img/Unity-doc.png">
+    <i>Unity</i>
+  </div>
 </div>
 
 <!-- NOTES -->
 
+- A-Frame hat eine sehr vollständige, versionierte Doku
+- A-Frame scholar bietet eine Plattform zum Austausch und Tutorials
+ 
+- Unity hat jedoch all das, aber in viel größerem Umfang (mehrsprachig)
+- auch durch die höhere Komplexität und Funktionsumfang
+
 ---
 
-## Entwickler Plattformen
+<!-- .slide: data-background="media/img/header.png" -->
 
-<!-- .slide: data-transition="none slide-out" -->
+# Community
 
-<div class="image-row">
-    <p>&nbsp;&nbsp;&nbsp;</p>
-    <p>native<br/>Engines</p>
-        <div><img style="padding-left: 15px" data-src="media/img/Unity.png" todo="Unity"></div>
-        <div><img style="padding-left: 30px" height="200px" data-src="media/img/Unreal.png" todo="Unreal"></div>
-        <div><img data-src="media/img/CryEngine.png" todo="CryEngine"></div>
-</div>
+https://aframe.io/blog/
 
-<div class="image-row"  style="height: 222.815px">
-    <p>&nbsp;&nbsp;&nbsp;</p>
-    <p>WebVR</p>
-    <h2 style="margin-left: 280px">**das Web**</h2>
-</div>
+---
+
+<!-- .slide: data-background="media/img/apainter.gif" -->
+
+# A-Frame: *A-Painter*
+
+@mozillavr
+
+---
+
+<!-- .slide: data-background-video="media/video/Star_Trek_Bridge_Crew.mp4" data-background-video-loop="true" data-background-video-muted="true" data-state="state--bg-dark" -->
+
+# Unity:<br> *Star Trek:Bridge Crew*
+
+@Ubisoft
+
+<p class="talk-info">https://youtu.be/p_Rz_btMLR4</p>
+
+---
+
+# Implementierungsaufwand
+
+<br><br>
+
+| A-Frame     | Unity      |
+|-------------|------------|
+| ~90 Stunden | 35 Stunden |
+
+---
+
+# Paketmanager
+
+| A-Frame                   | Unity VR             |
+|---------------------------|----------------------|
+| 350 000 npm Pakete        | 15 000 Pakete        |
+| 100+ speziell für A-Frame | 1000 speziell für VR |
+
+<!-- NOTES -->
+- Open source
+- Meiste Arbeit auf GitHub
+- Aktive Community auf Slack um Projekte zu teilen, interagieren, um Hilfe bitten
+- Featured projects on the `awesome-aframe` repository and *A Week of A-Frame* blog
+
+---
+
+# Wiederverwertbarkeit
+
+| A-Frame                          | Unity VR                     |
+|----------------------------------|------------------------------|
+| Einfache Trennung in npm Pakete  | Modularer Code möglich       |
+| Simples Updaten von Paketen      | Umstände bei Paket Update    |
+| Versionsabhängigkeiten vorhanden | Keine Versionsabhängigkeiten |
 
 <!-- NOTES -->
 
 ------
+
+# Ergebnis
+
+<!-- .slide: data-background-color="#fff" -->
+
+<img src="media/img/Kriterien.png">
+
+---
+
+## User Tests
+
+mit 20 Teilnehmern
+
+<img src="media/img/umfrage/header.jpg">
+
+---
+
+## A-Frame App
+
+<!--<div class="stretch" data-aframe-scene="scenes/Tool-Test-VR.html"></div>-->
+<iframe width="800" height="500" src="http://webvr.kasanzew.de"></iframe>
+
+<!-- NOTES -->
+- Das ist die von mir erstellte A-Frame App, die innerhalb der Folie läuft 
+- Funktioniert auf Desktops, Android, iOS, Samsung Gear VR, Oculus Rift und HTC Vive
+- Could open up the DOM Inspector to change values live
+- Since it's just HTML...
+
+---
+
+## Bewertung
+
+<!-- .slide: data-background-color="#fff" -->
+
+<img src="media/img/umfrage/Bewertung.png">A
+
+---
+
+## Gesamteindruck
+
+<!-- .slide: data-background-color="#fff" -->
+
+<img src="media/img/umfrage/Gesamteindruck.png">
+
+------
+
+# Sägen-Prototyp
+
+<p><br><br><br><br><br><br><br><br><br><br><br><br></p>
+
+<!-- .slide: data-background-video="media/video/saw.mp4" data-background-video-loop="true" data-state="state--bg-dark" -->
+
+---
+
+# Zusammenfassung
+
+---
 
 ## Probleme von VR-Ökosystemen
 
@@ -211,417 +520,13 @@ Transition:
 
 ---
 
-<img class="stretch" data-src="media/img/webvr.png">
-
-Browser APIs, welche WegGL Rendering auf Headsets und den Zugang zu VR Sensoren ermöglichen
-
-https://w3c.github.io/webvr/
-
-<!-- NOTES -->
-API:
-- Optimized rendering path to headsets
-- Access position and rotation (pose) data
-
-History:
-- Initial WebVR API by Mozilla
-- Working W3C community group
-- Mozilla, Google, Samsung, Microsoft, community currently iterating WebVR 1.1 API
-
-Not just a specification, it's implemented...
-
----
-
-https://webvr.rocks
-
-<div class="captioned-image-row small">
-  <div>
-    <img data-src="media/img/firefox-nightly.png">
-    <i>Firefox Nightly</i>
-  </div>
-  <div>
-    <img data-src="media/img/edge.jpg">
-    <i>Microsoft Edge</i>
-  </div>
-  <div>
-    <img data-src="media/img/chromium.png">
-    <i>Chromium</i>
-  </div>
-</div>
-
-<div class="captioned-image-row small">
-  <div>
-    <img data-src="media/img/chrome.png">
-    <i>Chrome for Android</i>
-  </div>
-  <div>
-    <img data-src="media/img/carmel.jpg">
-    <i>Oculus Carmel</i>
-  </div>
-  <div>
-    <img data-src="media/img/samsung-browser.png">
-    <i>Samsung Internet</i>
-  </div>
-  <div>
-    <img data-src="media/img/google-cardboard.png">
-    <i>Mobile Polyfill</i>
-  </div>
-</div>
-
-<!-- NOTES -->
-- Firefox + Chrome WebVR 1.0 hits release channels by early 2017
-- Currently behind Nightly, custom builds, and flags
-- Mobile Polyfill: use device motion / orientation sensors to polyfill on smartphones
-- With all the browsers behind it...
-
----
-
-<!-- .slide: data-background-video="media/video/boilerplate.mp4" data-state="state--bg-dark" -->
-
-<style>
-div.slide__boilerplate p {
-    font-size: 20pt
-}
-</style>
-
-<div class="slide__boilerplate">
-  <p>WebVR polyfill importieren</p>
-  <p>Kamera einrichten</p>
-  <p>Lichter einrichten</p>
-  <p>Szene initialisieren</p>
-  <p>Canvas deklarieren und weiterreichen</p>
-  <p>Auf Fenster Größenänderung reagieren</p>
-  <p>Renderer Instanziieren</p>
-  <p>Render loop erstellen</p>
-  <p>Assets vorladen</p>
-  <p>Responsivität behandeln</p>
-  <p>Mit metatags und mobile befassen</p>
-</div>
-
-<!-- NOTES -->
-- It's still too difficult to create WebVR experiences
-- Huge obstacle if doing small prototypes and experiments
-- three.js abstracts WebGL, 3D, and WebVR, but could still make it more accessible
-- Boilerplate needs updating with new versions of WebVR, three.js, and browser quirks
-- Encapsulate all of that into one line...
-
-------
-
-# A-Frame
-
-<!-- .slide: data-background="media/img/aframe-rendered-full.png" -->
-
-Ein Web Framework zum Erstellen von VR-Erfahrungen
-
-<!-- NOTES -->
-- Im Dezember 2015 gestartet
-- Warum:
-  - Für Web Entwickler VR Inhalte zu erstellen, ohne CG Kenntnisse 
-  - Schnellere Erstellung von Prototypen und Experimenten für WebVR and VR UX
-  - Zugmaschiene des WebVR Ökosystems
-
----
-
-## Hello World
-
-<!-- .slide: data-background="media/img/aframe.jpg" data-transition="slide-in none" -->
-
-```html
-<html>
-  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
-  <a-scene>
-
-
-
-
-
-  </a-scene>
-</html>
-```
-<!-- .element: class="stretch" -->
-
-<!-- NOTES -->
-- Just HTML
-- Drop a script tag, no build steps
-- Using Custom HTML Elements
-- One line of HTML `<a-scene>` handles
-  - canvas, camera, renderer, lights, controls, render loop, WebVR polyfill, VREffect
-- Put stuff inside our scene...
-
----
-
-## Hello World
-
-<!-- .slide: data-background="media/img/aframe.jpg" data-transition="fade-in slide-out" -->
-
-```html
-<html>
-  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
-  <a-scene>
-    <a-box color="#4CC3D9" position="-1 0.5 -3" rotation="0 45 0"></a-box>
-    <a-cylinder color="#FFC65D" position="1 0.75 -3" radius="0.5" height="1.5"></a-cylinder>
-    <a-sphere color="#EF2D5E" position="0 1.25 -5" radius="1.25"></a-sphere>
-    <a-plane color="#7BC8A4" position="0 0 -4" rotation="-90 0 0" width="4" height="4"></a-plane>
-    <a-sky color="#ECECEC"></a-sky>
-  </a-scene>
-</html>
-```
-<!-- .element: class="stretch" -->
-
-<!-- NOTES -->
-- Basic 3D primitives with Custom Elements
-- Readable: HTML arguably most accessible language in computing
-- Encapsulated: copy-and-paste HTML anywhere else and still work, no state or variables
-- Quickly look at a live example...
-- Syntax similar to CSS styles
-- Component names as HTML attributes
-- Component properties and values as HTML attribute value
-
-- Is an entity-component framework
-- Popular in game development, used by Unity
-- All objects in scene are **entities** that inherently empty objects. Plug in
-  **components** to attach appearance / behavior / functionality
-- 2D web where every element was fixed
-- 3D/VR is different, objects of infinite types and complexities, need an easy way to build up different kinds of objects
-
-- Start with an `<a-entity>`
-- By itself, has no appearance, behavior, functionality
-- Plug in components to add appearance, behavior, functionality
-
----
-
-<!-- .slide: data-background="media/img/aframe.jpg" -->
-
-## Funktioniert mit allen Frameworks
-
-<div class="captioned-image-row">
-  <div>
-    <img data-src="media/img/d3.png">
-    <i>d3.js</i>
-  </div>
-  <div>
-    <img data-src="media/img/vue.png">
-    <i>Vue.js</i>
-  </div>
-  <div>
-    <img data-src="media/img/react.png">
-    <i>React</i>
-  </div>
-  <div>
-    <img data-src="media/img/redux.png">
-    <i>Redux</i>
-  </div>
-  <div>
-    <img data-src="media/img/jquery.png">
-    <i>jQuery</i>
-  </div>
-  <div>
-    <img data-src="media/img/angular.png">
-    <i>Angular</i>
-  </div>
-</div>
-
-<!-- NOTES -->
-
-- Based on HTML, compatible with all existing libraries/frameworks
-- Good reason to have HTML as an intermediary layer between WebGL/three.js
-- All tools were on top of the notion of HTML
-- Under the hood, A-Frame is an extensible, declarative framework for three.js...
-
----
-
-<!-- .slide: data-background="media/img/standard-components.png" data-background-size="contain" -->
-
-<!-- NOTES -->
-- These are some components that ship with A-Frame
-- A-Frame is fully extensible at its core so...
-
----
-
-<!-- .slide: data-background="media/img/community-components.png" data-background-size="contain" -->
-
-<!-- NOTES -->
-- Community has filled the ecosystem with tons of components
-- Components can do whatever they want, have full access to three.js and Web APIs
-- The component ecosystem the lifeblood of A-Frame
-- Physics, leap motion, particle systems, audio visualizations, oceans
-- Drop these components as script tags and use them straight from HTML
-- Advanced developers empowering other developers
-- Working on collecting these components...
-
----
-
-# Registry
-
-<!-- .slide: data-background-color="#333" -->
-
-Verwaltete Sammlung von A-Frame Komponenten
-
-<a class="stretch" href="https://aframe.io/aframe-registry">
-  <video loop data-src="media/video/registrypreview.mp4" data-autoplay></video>
-</a>
-
-<!-- NOTES -->
-- Collecting them into the A-Frame registry
-- Like a store of components that we make sure work well
-- People can browse and search for components or install them....
-
----
-
-# Registry
-
-<!-- .slide: data-background-color="#333" -->
-
-Verwaltete Sammlung von A-Frame Komponenten
-
-<video loop data-src="media/video/leaphands.mp4" data-autoplay></video>
-
----
-
-## Inspector
-
-<!-- .slide: data-background="media/img/inspector.png" data-state="state--bg-dark" -->
-
-Visuelles Werkzeug für A-Frame mit `<Strg>+<Alt>+i`
-
-<div class="stretch" data-aframe-scene="scenes/80s.html"></div>
-
-------
-
-<!-- .slide: data-background="media/img/header.png" -->
-
-# Community
-
-https://aframe.io/blog/
-
----
-
-<!-- .slide: data-background="media/img/apainter.gif" -->
-
-# Kunst - *A-Painter*
-
-@mozillavr
-
----
-
-# aframe.io
-
-<div class="captioned-image-row">
-  <div>
-    <img data-src="media/img/github.png">
-    <i>125 contributors 5000 Stargazers</i>
-  </div>
-  <div>
-    <img data-src="media/img/slack.png">
-    <i>3000 members on Slack</i>
-  </div>
-  <div>
-    <img data-src="media/img/scene-collage-circle.png">
-    <i>100s of featured projects</i>
-  </div>
-</div>
-
-<!-- NOTES -->
-- Open source and inclusive project
-- Most work done on GitHub
-- Active community on Slack to share projects, interact, hang out, seek help
-- Featured projects on the `awesome-aframe` repository and *A Week of A-Frame* blog
-
-------
-
 <!-- .slide: data-background="media/img/Unity-Adam.jpg" data-state="state--bg-dark" -->
 
 # Unity
 
----
-
-# Performance
-
-<img height="500px" src="media/img/FCAT.png">
-
----
-
-# Vorteile von Unity
-
-- bessere Performance
-- umfangreiche visuelle Darstellung
-- größere Community
-
----
-
-<!-- .slide: data-background-video="media/video/Star_Trek_Bridge_Crew.mp4" data-background-video-loop="true" data-background-video-muted="true" data-state="state--bg-dark" -->
-
-# Games - *Star Trek:<br>Bridge Crew*
-
-@Ubisoft
-
-<p class="talk-info">https://youtu.be/p_Rz_btMLR4</p>
-
-------
-
-# Ergebnis
-
-<!-- .slide: data-background-color="#fff" -->
-
-<img src="media/img/Kriterien.png">
-
----
-
-## User Tests
-
-mit 20 Teilnehmern
-
-<img src="media/img/umfrage/header.jpg">
-
----
-
-## A-Frame App
-
-<!--<div class="stretch" data-aframe-scene="scenes/Tool-Test-VR.html"></div>-->
-<iframe width="800" height="500" src="http://webvr.kasanzew.de"></iframe>
-
-<!-- NOTES -->
-- Das ist die von mir erstellte A-Frame App, die innerhalb der Folie läuft 
-- Funktioniert auf Desktops, Android, iOS, Samsung Gear VR, Oculus Rift und HTC Vive
-- Could open up the DOM Inspector to change values live
-- Since it's just HTML...
-
----
-
-## Übelkeit
-
-<!-- .slide: data-background-color="#fff" -->
-
-<img src="media/img/umfrage/Uebelkeit.png">
-
----
-
-## Bewertung
-
-<!-- .slide: data-background-color="#fff" -->
-
-<img src="media/img/umfrage/Bewertung.png">
-
----
-
-## Gesamteindruck
-
-<!-- .slide: data-background-color="#fff" -->
-
-<img src="media/img/umfrage/Gesamteindruck.png">
-
-------
-
-# Sägen-Prototyp
-
-<p><br><br><br><br><br><br><br><br><br><br><br><br></p>
-
-<!-- .slide: data-background-video="media/video/saw.mp4" data-background-video-loop="true" data-state="state--bg-dark" -->
-
----
-
-# Zusammenfassung
-
-
+- Performance
+- Visuelle Qualität
+- einfache Monetarisierung
 
 ------
 
@@ -633,3 +538,4 @@ mit 20 Teilnehmern
 # Quellen
 
 - https://aframevr.github.io/aframe-presentation-kit/
+- Quellen im Literaturverzeichnis der Masterarbeit
