@@ -1,3 +1,5 @@
+<!-- .slide: data-background="linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(media/img/beuth.png)" data-background-size="cover" -->
+
 <div class="talk-title">
   <h1>Masterarbeit Verteidigung</h1>
   <p>Konzeption, Entwicklung und Evaluation einer
@@ -10,18 +12,74 @@
 
 <!-- NOTES -->
 
+- Titel vorlesen
 
 ------
 
-# Virtual Reality
+# Ziele
 
-<!-- .slide: data-background-video="media/video/virtualreality.mp4" data-background-video-loop="true" data-background-video-muted="true" data-state="state--bg-dark" -->
+* Vergleich zwischen WebVR und nativen VR-Apps
+* Entwicklung einer Test-App für beide Platformen
+* Evaluation der Ergebnisse der Test-App durch Usertests
 
 <!-- NOTES -->
-- Simula
-- Das beste Interface 
+
+- Ziele erläutern
+
+------
+
+# Bewertung
+
+<!-- NOTES -->
+
+- unterteilt in technische Kriterien welche eher das Endprodukt beeinflussen
+- und allgemeine Kriterien, die die Entwicklung beeinflussen
 
 ---
+
+# Technische Kriterien
+
+- Hardware
+- Grafik-API
+- Multimedia
+- Lizensierung
+- Performance
+
+<!-- NOTES -->
+
+- Hardware: Kompatibilität mit aktueller Hardware
+- Lizensierung: Lizensmodell für Vertrieb
+- Grafik-API: Möglichkeiten der gegebenen Grafikschnittstellen
+- Multimedia: Unterstützung von verschiedenen Formaten (3D/Bild/Video)
+- Performance: Anzahl/Komplexität dargestellter Elemente bei stabiler FPS
+
+---
+
+# Allgemeine Kriterien
+
+- Dokumentation
+- Community
+- Verbreitung
+- Implementierungsaufwand
+- Paketmanager
+- Wiederverwertbarkeit
+
+<!-- NOTES -->
+
+- Dokumentation: Umfang und Qualität der Dokumentation
+- Community: Größe und Aktivität
+- Verbreitung: Anzahl vertriebener Apps
+- Implementierungsaufwand: Zeit der Entwicklung am Beispiel der Test-App
+- Paketmanager: Anzahl und Qualität angebotener Pakete
+- Wiederverwertbarkeit: Portierbarkeit von Code zwischen Projekten
+
+------
+
+# Technische Kriterien
+
+---
+
+# Hardware
 
 <div class="image-row">
   <div><img data-src="media/img/google-cardboard.png"></div>
@@ -36,10 +94,11 @@
 </div>
 
 <!-- NOTES -->
-- Wird von großen Unternehmen weltweit investiert, jeder will etwas mit VR machen
+- Wird von großen Unternehmen weltweit investiert
 - Hardware reicht von billig bis teuer, mit und ohne Kabel, Controller, verschiedene Tracking Technologien
 - Die HTC Vive bietet mit Steam derzeit das umfangreichste Erlebnis auf dem freien Markt
 - Es gibt also eine große Anzahl an Geräten, Systemen und Plattformen, die in Konkurenz zu einander stehen
+- A-Frame
 
 ---
 
@@ -65,7 +124,7 @@
 
 ## Entwickler Plattformen
 
-<!-- .slide: data-transition="fade-in slide-out" -->
+<!-- .slide: data-transition="none slide-out" -->
 
 <div class="image-row">
     <p>&nbsp;&nbsp;&nbsp;</p>
@@ -84,43 +143,6 @@
 <!-- NOTES -->
 
 ------
-
-# Ziele
-
-* Vergleich zwischen WebVR und nativen VR-Apps
-* Entwicklung eines Prototyps für beide Platformen
-* Evaluation der Ergebnisse mit User Tests
-
-------
-
-# Bewertung
-
----
-
-# technische Kriterien
-
-- Performance
-- Grafik-API
-- Hardware
-- Multimedia
-- Lizensierung
-
----
-
-# allgemeine Kriterien
-
-- Dokumentation
-- Community
-- Verbreitung
-- Implementierungsaufwand
-- Paketmanager
-- Wiederverwertbarkeit
-
-------
-
-# Implementierung
-
----
 
 ## Probleme von VR-Ökosystemen
 
@@ -148,8 +170,6 @@
 ---
 
 ## WebVR
-
----
 
 Eine offene VR-Plattform mit den Vorteilen des **Web**
 
@@ -193,8 +213,7 @@ Transition:
 
 <img class="stretch" data-src="media/img/webvr.png">
 
-Browser APIs that enable WebGL rendering to headsets and access to VR
-sensors
+Browser APIs, welche WegGL Rendering auf Headsets und den Zugang zu VR Sensoren ermöglichen
 
 https://w3c.github.io/webvr/
 
@@ -206,7 +225,7 @@ API:
 History:
 - Initial WebVR API by Mozilla
 - Working W3C community group
-- Mozilla, Google, Samsung, Microsoft, community currently iterating WebVR 1.0 API
+- Mozilla, Google, Samsung, Microsoft, community currently iterating WebVR 1.1 API
 
 Not just a specification, it's implemented...
 
@@ -256,43 +275,32 @@ https://webvr.rocks
 
 ---
 
-## Metaverse
-
-<!-- .slide: data-background="media/img/metaverse.jpg" -->
-
-<!-- NOTES -->
-- Shared persistent collective virtual spaces
-- Alternate digital reality that the world may live, work, play
-- Must be decentralized/open/connected, the Web is best platform to fully realize
-- Where do we begin?
-- three.js abstracts WebGL, 3D, and WebVR, but could still make it more accessible
-
----
-
-Too hard to create WebVR experiences...
-
----
-
 <!-- .slide: data-background-video="media/video/boilerplate.mp4" data-state="state--bg-dark" -->
 
+<style>
+div.slide__boilerplate p {
+    font-size: 20pt
+}
+</style>
+
 <div class="slide__boilerplate">
-  <p>Import WebVR polyfill</p>
-  <p>Set up camera</p>
-  <p>Set up lights</p>
-  <p>Initialize scene</p>
-  <p>Declare and pass canvas</p>
-  <p>Listen to window resize</p>
-  <p>Install VREffect</p>
-  <p>Instantiate renderer</p>
-  <p>Create render loop</p>
-  <p>Preload assets</p>
-  <p>Figure out responsiveness</p>
-  <p>Deal with metatags and mobile</p>
+  <p>WebVR polyfill importieren</p>
+  <p>Kamera einrichten</p>
+  <p>Lichter einrichten</p>
+  <p>Szene initialisieren</p>
+  <p>Canvas deklarieren und weiterreichen</p>
+  <p>Auf Fenster Größenänderung reagieren</p>
+  <p>Renderer Instanziieren</p>
+  <p>Render loop erstellen</p>
+  <p>Assets vorladen</p>
+  <p>Responsivität behandeln</p>
+  <p>Mit metatags und mobile befassen</p>
 </div>
 
 <!-- NOTES -->
 - It's still too difficult to create WebVR experiences
 - Huge obstacle if doing small prototypes and experiments
+- three.js abstracts WebGL, 3D, and WebVR, but could still make it more accessible
 - Boilerplate needs updating with new versions of WebVR, three.js, and browser quirks
 - Encapsulate all of that into one line...
 
@@ -364,6 +372,20 @@ Ein Web Framework zum Erstellen von VR-Erfahrungen
 - Readable: HTML arguably most accessible language in computing
 - Encapsulated: copy-and-paste HTML anywhere else and still work, no state or variables
 - Quickly look at a live example...
+- Syntax similar to CSS styles
+- Component names as HTML attributes
+- Component properties and values as HTML attribute value
+
+- Is an entity-component framework
+- Popular in game development, used by Unity
+- All objects in scene are **entities** that inherently empty objects. Plug in
+  **components** to attach appearance / behavior / functionality
+- 2D web where every element was fixed
+- 3D/VR is different, objects of infinite types and complexities, need an easy way to build up different kinds of objects
+
+- Start with an `<a-entity>`
+- By itself, has no appearance, behavior, functionality
+- Plug in components to add appearance, behavior, functionality
 
 ---
 
@@ -407,130 +429,6 @@ Ein Web Framework zum Erstellen von VR-Erfahrungen
 
 ---
 
-## A-Frame App
-
-<!-- .slide: data-background="media/img/metaverse.jpg" -->
-
-<!--<div class="stretch" data-aframe-scene="scenes/Tool-Test-VR.html"></div>-->
-<iframe width="700" height="400" src="http://webvr.kasanzew.de"></iframe>
-
-<!-- NOTES -->
-- A-Frame scene by Ada Rose Edwards running from inside my HTML slides
-- Works on desktop, Android, iOS, Samsung Gear VR, Oculus Rift, HTC Vive
-- Could open up the DOM Inspector to change values live
-- Since it's just HTML...
-
-------
-
-# Entity-Component-System
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" -->
-
-<!-- NOTES -->
-- Is an entity-component framework
-- Popular in game development, used by Unity
-- All objects in scene are **entities** that inherently empty objects. Plug in
-  **components** to attach appearance / behavior / functionality
-- 2D web where every element was fixed
-- 3D/VR is different, objects of infinite types and complexities, need an easy way to build up different kinds of objects
-
----
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="slide-in none" -->
-
-## Composing an Entity
-
-```html
-<a-entity>
-```
-<!-- .element: class="stretch" -->
-
-<!-- NOTES -->
-- Start with an `<a-entity>`
-- By itself, has no appearance, behavior, functionality
-- Plug in components to add appearance, behavior, functionality
-
----
-
-## Composing an Entity
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
-
-```html
-<a-entity
-  geometry="primitive: sphere; radius: 1.5"
-  material="color: #343434; roughness: 0.4; sphericalEnvMap: #texture">
-```
-<!-- .element: class="stretch" -->
-
-<!-- NOTES -->
-- Syntax similar to CSS styles
-- Component names as HTML attributes
-- Component properties and values as HTML attribute value
-
----
-
-## Composing an Entity
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
-
-```html
-<a-entity
-  geometry="primitive: sphere; radius: 1.5"
-  material="color: #343434; roughness: 0.4; sphericalEnvMap: #texture"
-  position="-1 2 4" rotation="45 0 90" scale="2 2 2">
-```
-<!-- .element: class="stretch" -->
-
----
-
-## Composing an Entity
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
-
-```html
-<a-entity
-  geometry="primitive: sphere; radius: 1.5"
-  material="color: #343434; roughness: 0.4; sphericalEnvMap: #texture"
-  position="-1 2 4" rotation="45 0 90" scale="2 2 2"
-  animation="property: rotation; loop: true; to: 0 360 0"
-  movement-pattern="type: spline; speed: 4">
-```
-<!-- .element: class="stretch" -->
-
----
-
-## Composing an Entity
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
-
-```html
-<a-entity
-  json-model="src: #robot"
-  position="-1 2 4" rotation="45 0 90" scale="2 2 2"
-  animation="property: rotation; loop: true; to: 0 360 0"
-  movement-pattern="type: spline; speed: 4">
-```
-<!-- .element: class="stretch" -->
-
----
-
-## Composing an Entity
-
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
-
-```html
-<a-entity
-  json-model="src: #robot"
-  position="-1 2 4" rotation="45 0 90" scale="2 2 2"
-  animation="property: rotation; loop: true; to: 0 360 0"
-  movement-pattern="type: attack; target: #player"
-  explode="on: hit">
-```
-<!-- .element: class="stretch" -->
-
----
-
 <!-- .slide: data-background="media/img/standard-components.png" data-background-size="contain" -->
 
 <!-- NOTES -->
@@ -556,7 +454,7 @@ Ein Web Framework zum Erstellen von VR-Erfahrungen
 
 <!-- .slide: data-background-color="#333" -->
 
-Curated collection of A-Frame components.
+Verwaltete Sammlung von A-Frame Komponenten
 
 <a class="stretch" href="https://aframe.io/aframe-registry">
   <video loop data-src="media/video/registrypreview.mp4" data-autoplay></video>
@@ -573,7 +471,7 @@ Curated collection of A-Frame components.
 
 <!-- .slide: data-background-color="#333" -->
 
-Curated collection of A-Frame components.
+Verwaltete Sammlung von A-Frame Komponenten
 
 <video loop data-src="media/video/leaphands.mp4" data-autoplay></video>
 
@@ -583,7 +481,7 @@ Curated collection of A-Frame components.
 
 <!-- .slide: data-background="media/img/inspector.png" data-state="state--bg-dark" -->
 
-Visual tool for A-Frame. Just `<ctrl>+<alt>+i`.
+Visuelles Werkzeug für A-Frame mit `<Strg>+<Alt>+i`
 
 <div class="stretch" data-aframe-scene="scenes/80s.html"></div>
 
@@ -599,81 +497,9 @@ https://aframe.io/blog/
 
 <!-- .slide: data-background="media/img/apainter.gif" -->
 
-# Art - *A-Painter*
+# Kunst - *A-Painter*
 
 @mozillavr
-
----
-
-<!-- .slide: data-background="media/img/mars.jpg" -->
-
-# Journalism - *Journey to Mars*
-
-The Washington Post
-
----
-
-<!-- .slide: data-background="media/img/citybuilder.gif" -->
-
-# Sandbox - *City Builder*
-
-@kfarr
-
----
-
-<!-- .slide: data-background="media/img/adit.gif" -->
-
-# Data Visualization - *Adit*
-
-@datatitian
-
----
-
-<!-- .slide: data-background="media/img/a-blast.gif" -->
-
-# Gaming - *A-Blast*
-
-@mozillavr
-
----
-
-<!-- .slide: data-background="media/img/ux.gif" -->
-
-# Prototyping - *UI Widgets*
-
-@whoyee
-
----
-
-<!-- .slide: data-background="media/img/math.gif" -->
-
-# Mathematics - *MathworldVR*
-
-@sleighdogs
-
----
-
-<!-- .slide: data-background="media/img/ar.gif" -->
-
-# AR - *AR.js + A-Frame*
-
-@jerome_etienne
-
----
-
-<!-- .slide: data-background-video="media/video/livetour.mp4" data-background-video-loop="true" -->
-
-# Real Estate - *Live Tour*
-
-iStaging
-
----
-
-<!-- .slide: data-background="media/img/cadavr.gif" -->
-
-# Education - *CadaVR*
-
-@drryanjames
 
 ---
 
@@ -702,32 +528,108 @@ iStaging
 
 ------
 
+<!-- .slide: data-background="media/img/Unity-Adam.jpg" data-state="state--bg-dark" -->
+
 # Unity
+
+---
+
+# Performance
+
+<img height="500px" src="media/img/FCAT.png">
+
+---
+
+# Vorteile von Unity
+
+- bessere Performance
+- umfangreiche visuelle Darstellung
+- größere Community
 
 ---
 
 <!-- .slide: data-background-video="media/video/Star_Trek_Bridge_Crew.mp4" data-background-video-loop="true" data-background-video-muted="true" data-state="state--bg-dark" -->
 
-# Games - *Star Trek: Bridge Crew*
+# Games - *Star Trek:<br>Bridge Crew*
 
 @Ubisoft
 
----
-
-<!-- .slide: data-background="media/img/Apollo11VR.jpg" -->
+<p class="talk-info">https://youtu.be/p_Rz_btMLR4</p>
 
 ------
 
-# Ergebnisse
+# Ergebnis
+
+<!-- .slide: data-background-color="#fff" -->
+
+<img src="media/img/Kriterien.png">
 
 ---
 
 ## User Tests
 
+mit 20 Teilnehmern
+
+<img src="media/img/umfrage/header.jpg">
+
 ---
 
-## Bewertungskriterien
+## A-Frame App
 
-<img src="media/img/Kriterien.png">
+<!--<div class="stretch" data-aframe-scene="scenes/Tool-Test-VR.html"></div>-->
+<iframe width="800" height="500" src="http://webvr.kasanzew.de"></iframe>
+
+<!-- NOTES -->
+- Das ist die von mir erstellte A-Frame App, die innerhalb der Folie läuft 
+- Funktioniert auf Desktops, Android, iOS, Samsung Gear VR, Oculus Rift und HTC Vive
+- Could open up the DOM Inspector to change values live
+- Since it's just HTML...
+
+---
+
+## Übelkeit
+
+<!-- .slide: data-background-color="#fff" -->
+
+<img src="media/img/umfrage/Uebelkeit.png">
+
+---
+
+## Bewertung
+
+<!-- .slide: data-background-color="#fff" -->
+
+<img src="media/img/umfrage/Bewertung.png">
+
+---
+
+## Gesamteindruck
+
+<!-- .slide: data-background-color="#fff" -->
+
+<img src="media/img/umfrage/Gesamteindruck.png">
+
+------
+
+# Sägen-Prototyp
+
+<p><br><br><br><br><br><br><br><br><br><br><br><br></p>
+
+<!-- .slide: data-background-video="media/video/saw.mp4" data-background-video-loop="true" data-state="state--bg-dark" -->
+
+---
+
+# Zusammenfassung
 
 
+
+------
+
+# Vielen Dank
+### für die Aufmerksamkeit
+
+------
+
+# Quellen
+
+- https://aframevr.github.io/aframe-presentation-kit/
