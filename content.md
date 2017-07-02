@@ -1,16 +1,15 @@
-<!-- .slide: data-background="media/img/aframe.jpg" -->
-
 <div class="talk-title">
-  <h1>A-Frame</h1>
-  <p>A web framework for building VR experiences</p>
-  <p class="talk-info">
-    @andgokevin | Mozilla VR | **aframe.io**
+  <h1>Masterarbeit Verteidigung</h1>
+  <p>Konzeption, Entwicklung und Evaluation einer
+     interaktiven Virtual Reality Anwendungen mit
+     Web-Technologien im Vergleich zu nativer Entwicklung</p>
+  <p class="talk-info" style="margin-top: -100px">
+    Sebastian Kasanzew | Beuth Hochschule | iconmobile
   </p>
 </div>
 
 <!-- NOTES -->
-- Onboard web developers into the 3D and VR world with easy-to-use tools
-- Prototype WebVR experiences faster
+
 
 ------
 
@@ -19,9 +18,8 @@
 <!-- .slide: data-background-video="media/video/virtualreality.mp4" data-background-video-loop="true" data-background-video-muted="true" data-state="state--bg-dark" -->
 
 <!-- NOTES -->
-- Ask how many have tried VR.
-- Virtual reality is a technology platform that transports you to realistic, interactive, immersive 3D environments
-- It's the next platform, will change how we work + play + communicate digitally, face of society
+- Simula
+- Das beste Interface 
 
 ---
 
@@ -38,27 +36,106 @@
 </div>
 
 <!-- NOTES -->
-- Backed by the largest corporations in the world, everyone wants in
-- Range from cheap to expensive, tethered and untethered, controllers, tracking
-- HTC Vive with Steam currently offers the most compelling experiences, but never know
-- See a lot of different devices, systems, platforms competing against each other...
+- Wird von großen Unternehmen weltweit investiert, jeder will etwas mit VR machen
+- Hardware reicht von billig bis teuer, mit und ohne Kabel, Controller, verschiedene Tracking Technologien
+- Die HTC Vive bietet mit Steam derzeit das umfangreichste Erlebnis auf dem freien Markt
+- Es gibt also eine große Anzahl an Geräten, Systemen und Plattformen, die in Konkurenz zu einander stehen
 
 ---
 
-## Friction of VR Ecosystems
+## Entwickler Plattformen
+
+<!-- .slide: data-transition="slide-in none" -->
+
+<div class="image-row">
+    <p>&nbsp;&nbsp;&nbsp;</p>
+    <p>native<br/>Engines</p>
+    <div><img style="padding-left: 15px" data-src="media/img/Unity.png" todo="Unity"></div>
+    <div><img style="padding-left: 30px" height="200px" data-src="media/img/Unreal.png" todo="Unreal"></div>
+    <div><img data-src="media/img/CryEngine.png" todo="CryEngine"></div>
+</div>
+
+<div class="image-row" style="height: 222.815px">
+
+</div>
+
+<!-- NOTES -->
+
+---
+
+## Entwickler Plattformen
+
+<!-- .slide: data-transition="fade-in slide-out" -->
+
+<div class="image-row">
+    <p>&nbsp;&nbsp;&nbsp;</p>
+    <p>native<br/>Engines</p>
+        <div><img style="padding-left: 15px" data-src="media/img/Unity.png" todo="Unity"></div>
+        <div><img style="padding-left: 30px" height="200px" data-src="media/img/Unreal.png" todo="Unreal"></div>
+        <div><img data-src="media/img/CryEngine.png" todo="CryEngine"></div>
+</div>
+
+<div class="image-row"  style="height: 222.815px">
+    <p>&nbsp;&nbsp;&nbsp;</p>
+    <p>WebVR</p>
+    <h2 style="margin-left: 280px">**das Web**</h2>
+</div>
+
+<!-- NOTES -->
+
+------
+
+# Ziele
+
+* Vergleich zwischen WebVR und nativen VR-Apps
+* Entwicklung eines Prototyps für beide Platformen
+* Evaluation der Ergebnisse mit User Tests
+
+------
+
+# Bewertung
+
+---
+
+# technische Kriterien
+
+- Performance
+- Grafik-API
+- Hardware
+- Multimedia
+- Lizensierung
+
+---
+
+# allgemeine Kriterien
+
+- Dokumentation
+- Community
+- Verbreitung
+- Implementierungsaufwand
+- Paketmanager
+- Wiederverwertbarkeit
+
+------
+
+# Implementierung
+
+---
+
+## Probleme von VR-Ökosystemen
 
 <div class="captioned-image-row">
   <div>
     <img data-src="media/img/gatekeeper.png">
-    <i>Gatekeepers</i>
+    <i>Wächter</i>
   </div>
   <div>
     <img data-src="media/img/downloads-installs.png">
-    <i>Installs</i>
+    <i>Installationen</i>
   </div>
   <div>
     <img data-src="media/img/closed-door.png">
-    <i>Closed</i>
+    <i>Geschlossen</i>
   </div>
 </div>
 
@@ -68,24 +145,26 @@
 - Closed ecosystem: proprietary engines, steep learning curves, siloed experiences, fragmentation
 - We want VR to be successful, so we want a platform without these points of friction. The answer is WebVR...
 
-------
+---
 
-# WebVR
+## WebVR
 
-An open virtual reality platform with the advantages of **the Web**
+---
+
+Eine offene VR-Plattform mit den Vorteilen des **Web**
 
 <div class="captioned-image-row">
   <div>
     <img data-src="media/img/web-is-open.png">
-    <i>Open</i>
+    <i>Offen</i>
   </div>
   <div>
     <img data-src="media/img/web-is-connected.png">
-    <i>Connected</i>
+    <i>Verbunden</i>
   </div>
   <div>
     <img data-src="media/img/web-is-instant.png">
-    <i>Instant</i>
+    <i>Unmittelbar</i>
   </div>
 </div>
 
@@ -152,7 +231,7 @@ https://webvr.rocks
 
 <div class="captioned-image-row small">
   <div>
-    <img data-src="media/img/chrome.jpg">
+    <img data-src="media/img/chrome.png">
     <i>Chrome for Android</i>
   </div>
   <div>
@@ -223,14 +302,14 @@ Too hard to create WebVR experiences...
 
 <!-- .slide: data-background="media/img/aframe-rendered-full.png" -->
 
-A web framework for building virtual reality experiences
+Ein Web Framework zum Erstellen von VR-Erfahrungen
 
 <!-- NOTES -->
-- Launched last December
-- Why:
-  - Easy for web developers to create VR content, without graphics knowledge
-  - Prototype and experiment WebVR and VR UX faster
-  - Vehicle to kickstart WebVR ecosystem
+- Im Dezember 2015 gestartet
+- Warum:
+  - Für Web Entwickler VR Inhalte zu erstellen, ohne CG Kenntnisse 
+  - Schnellere Erstellung von Prototypen und Experimenten für WebVR and VR UX
+  - Zugmaschiene des WebVR Ökosystems
 
 ---
 
@@ -240,7 +319,7 @@ A web framework for building virtual reality experiences
 
 ```html
 <html>
-  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
   <a-scene>
 
 
@@ -268,7 +347,7 @@ A web framework for building virtual reality experiences
 
 ```html
 <html>
-  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
   <a-scene>
     <a-box color="#4CC3D9" position="-1 0.5 -3" rotation="0 45 0"></a-box>
     <a-cylinder color="#FFC65D" position="1 0.75 -3" radius="0.5" height="1.5"></a-cylinder>
@@ -288,25 +367,9 @@ A web framework for building virtual reality experiences
 
 ---
 
-## Hello Metaverse
-
-<i>by Ada Rose Edwards (@lady_ada_king)</i>
-
-<!-- .slide: data-background="media/img/metaverse.jpg" -->
-
-<div class="stretch" data-aframe-scene="scenes/80s.html"></div>
-
-<!-- NOTES -->
-- A-Frame scene by Ada Rose Edwards running from inside my HTML slides
-- Works on desktop, Android, iOS, Samsung Gear VR, Oculus Rift, HTC Vive
-- Could open up the DOM Inspector to change values live
-- Since it's just HTML...
-
----
-
 <!-- .slide: data-background="media/img/aframe.jpg" -->
 
-## Works With Everything
+## Funktioniert mit allen Frameworks
 
 <div class="captioned-image-row">
   <div>
@@ -341,6 +404,21 @@ A web framework for building virtual reality experiences
 - Good reason to have HTML as an intermediary layer between WebGL/three.js
 - All tools were on top of the notion of HTML
 - Under the hood, A-Frame is an extensible, declarative framework for three.js...
+
+---
+
+## A-Frame App
+
+<!-- .slide: data-background="media/img/metaverse.jpg" -->
+
+<!--<div class="stretch" data-aframe-scene="scenes/Tool-Test-VR.html"></div>-->
+<iframe width="700" height="400" src="http://webvr.kasanzew.de"></iframe>
+
+<!-- NOTES -->
+- A-Frame scene by Ada Rose Edwards running from inside my HTML slides
+- Works on desktop, Android, iOS, Samsung Gear VR, Oculus Rift, HTC Vive
+- Could open up the DOM Inspector to change values live
+- Since it's just HTML...
 
 ------
 
@@ -527,14 +605,6 @@ https://aframe.io/blog/
 
 ---
 
-<!-- .slide: data-background="media/img/syria.gif" -->
-
-# Journalism - *Fear of the Sky*
-
-Amnesty International UK
-
----
-
 <!-- .slide: data-background="media/img/mars.jpg" -->
 
 # Journalism - *Journey to Mars*
@@ -591,14 +661,6 @@ The Washington Post
 
 ---
 
-<!-- .slide: data-background="media/img/webvrstudio.png" -->
-
-# Tools - *WebVR Studio*
-
-@webvrstudio
-
----
-
 <!-- .slide: data-background-video="media/video/livetour.mp4" data-background-video-loop="true" -->
 
 # Real Estate - *Live Tour*
@@ -637,3 +699,35 @@ iStaging
 - Most work done on GitHub
 - Active community on Slack to share projects, interact, hang out, seek help
 - Featured projects on the `awesome-aframe` repository and *A Week of A-Frame* blog
+
+------
+
+# Unity
+
+---
+
+<!-- .slide: data-background-video="media/video/Star_Trek_Bridge_Crew.mp4" data-background-video-loop="true" data-background-video-muted="true" data-state="state--bg-dark" -->
+
+# Games - *Star Trek: Bridge Crew*
+
+@Ubisoft
+
+---
+
+<!-- .slide: data-background="media/img/Apollo11VR.jpg" -->
+
+------
+
+# Ergebnisse
+
+---
+
+## User Tests
+
+---
+
+## Bewertungskriterien
+
+<img src="media/img/Kriterien.png">
+
+
