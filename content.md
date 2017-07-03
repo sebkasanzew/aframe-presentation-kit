@@ -123,9 +123,9 @@
 <!-- NOTES -->
 
 - Hardware: Kompatibilität mit aktueller Hardware
-- Lizensierung: Lizensmodell für Vertrieb
 - Grafik-API: Möglichkeiten der gegebenen Grafikschnittstellen
 - Multimedia: Unterstützung von verschiedenen Formaten (3D/Bild/Video)
+- Lizensierung: Lizensmodell für Vertrieb
 - Performance: Anzahl/Komplexität dargestellter Elemente bei stabiler FPS
 
 ---
@@ -264,6 +264,32 @@ https://webvr.rocks
 
 ---
 
+<!-- .slide: data-background="media/img/apainter.gif" -->
+
+# A-Frame: *A-Painter*
+
+@mozillavr
+
+<!-- NOTES -->
+- Tilt-Brush Klon von Mozilla
+- visueller Stil eher durchweg vereinfacht wegen Performance Beschränkung
+
+---
+
+<!-- .slide: data-background-video="media/video/Star_Trek_Bridge_Crew.mp4" data-background-video-loop="true" data-background-video-muted="true" data-state="state--bg-dark" -->
+
+# Unity:<br> *Star Trek:Bridge Crew*
+
+@Ubisoft
+
+<p class="talk-info">https://youtu.be/p_Rz_btMLR4</p>
+
+<!-- NOTES -->
+- (Folienhelfer ausschalten)
+- deutlich hochwertiger und ansehnlicher
+
+---
+
 # Multimedia
 
 <table>
@@ -384,34 +410,12 @@ die den Entwicklungsprozess einer App maßgeblich mitbestimmen
 
 # Community
 
-<!-- NOTES -->
-
-
----
-
-<!-- .slide: data-background="media/img/apainter.gif" -->
-
-# A-Frame: *A-Painter*
-
-@mozillavr
+- aktive Community auf beiden Seiten
+- Unitys Community älter
 
 <!-- NOTES -->
-- Tilt-Brush Klon von Mozilla
-- visueller Stil eher durchweg vereinfacht wegen Performance Beschränkung
 
----
 
-<!-- .slide: data-background-video="media/video/Star_Trek_Bridge_Crew.mp4" data-background-video-loop="true" data-background-video-muted="true" data-state="state--bg-dark" -->
-
-# Unity:<br> *Star Trek:Bridge Crew*
-
-@Ubisoft
-
-<p class="talk-info">https://youtu.be/p_Rz_btMLR4</p>
-
-<!-- NOTES -->
-- (Folienhelfer ausschalten)
-- deutlich hochwertiger und ansehnlicher
 
 ---
 
