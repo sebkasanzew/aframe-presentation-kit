@@ -19,7 +19,7 @@
 # Ziele
 
 - Vergleich zwischen WebVR und nativen VR-Apps
-- Entwicklung einer Test-App für beide Platformen
+- Entwicklung einer Test-App für beide Plattformen
 - Evaluation der Ergebnisse der Test-App durch Usertests
 - Prototyp einer Sägen-Simulation in VR 
 
